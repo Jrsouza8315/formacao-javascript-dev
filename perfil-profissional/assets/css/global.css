@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('/perfil-profissional/assets/fonts/neue-machina-regular.otf');
+}
+
+body{
+    
+    color: #000;
+}
+
+.main{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+
+}
+
+.main::before{
+    content: '';
+    background-image: url('/perfil-profissional/assets/img/plano-de-fundo4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300vh;
+    height: 150vw;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+@media only screen and (min-width: 768px){
+    .main {
+        max-width: 600px;
+        margin: 1rem auto;
+    }
+
+    
+}
