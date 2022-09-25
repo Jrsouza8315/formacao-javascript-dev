@@ -9,6 +9,7 @@
 
 }
 
+
 .acordion:hover {
     background-color: #55569E ;
     border-color: #55569E;
@@ -30,8 +31,12 @@
     background-color: transparent;
     color: aliceblue;
     border: none;
-    
+}
 
+.acordion .trigger h2{
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: start;
 }
 
 .acordion .trigger:hover {
@@ -46,6 +51,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("/perfil-profissional/assets/img/arrow.png");
+    transition: .5s;
 }
 
 .acordion.open .trigger::after {
@@ -53,10 +59,16 @@
 }
 
 .acordion .content {
-    display: none;
+    display: none; 
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .acordion.open .content {
-    display:inline-block;
-    color: #fff;
+    display: block;
+    padding: 0 1rem 1rem 2rem;
+    height: auto;
+    opacity: 1;
 }
